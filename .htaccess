@@ -1,6 +1,0 @@
-<IfModule mod_rewrite.c>
-   RewriteEngine on
-   RewriteRule    ^health.php$ .openshift/health.php    [L]
-   RewriteCond %{REQUEST_FILENAME} !-f
-   RewriteRule ^(.*)$ public/index.php [QSA,L]
-</IfModule>
